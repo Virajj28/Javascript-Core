@@ -7,3 +7,6 @@
 
   <p>...After the script.</p>
 <!-- Alert msg is pop-up -->
+
+# 2 Code Structure
+    Introducing semicolon and comment tag in JS.
