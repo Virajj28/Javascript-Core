@@ -60,8 +60,7 @@ const bigInt = 1234567890123456789012345678901234567890n;
 
   ### String
 
-  In JS, there are 3 types of quotes.
-
+  In JS, there are 3 types of quotes=>
   1.Double quotes: "Hello".
   2.Single quotes: 'Hello'.
   3.Backticks: `Hello`.
@@ -70,6 +69,47 @@ const bigInt = 1234567890123456789012345678901234567890n;
   let str2 = 'Single quotes are ok too';
   let phrase = `can embed another ${str}`;
 
+  ### Boolean (logical type)
+
+  The boolean type has only two values: true and false.
+
+This type is commonly used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”.
+
+### The "null" value
+
+  The special null value does not belong to any of the types described above.
+
+  It forms a separate type of its own which contains only the null value:
+
+  =>> let age = null;
+  In JavaScript, null is not a “reference to a non-existing object” or a “null pointer” like in some other languages.
+
+  It’s just a special value which represents “nothing”, “empty” or “value unknown”.
+
+  The code above states that age is unknown.
+
+### The "undefined value"
+
+  The special value undefined also stands apart. It makes a type of its own, just like null.
+
+  The meaning of undefined is “value is not assigned”.
+
+  eg. let age;
+      alert(age); // undefined
+
+  ### Objects and Symbols
+
+  The object type is special.
+  eg. An empty object is created.
+      let user = new Object();
+       let user = {};
+
+  The symbol type is used to create unique identifiers for objects. We have to mention it here for the sake of completeness, but also postpone the details till we know objects.
+
+  ### The typeof operator
+  The typeof operator returns the type of the argument. It’s useful when we want to process values of different types differently or just want to do a quick check.
+
+  eg. typeoof "foo"
 <hr>
 <hr>
 <hr>
