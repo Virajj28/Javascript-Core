@@ -1,4 +1,4 @@
-# 1 Hello, world !
+## 1 Hello, world !
   <p>Before the script...</p>
 
   <script>
@@ -9,12 +9,13 @@
 <!-- Alert msg is pop-up -->
 <hr>
 
-# 2 Code Structure
+## 1 Hello, world !
+ 2 Code Structure
     Introducing semicolon and comment tag in JS.
 
 <hr>
 
-# 3 The modern mode, "use strict"
+## 3 The modern mode, "use strict"
 <!-- The directive looks like a string: "use strict" or 'use strict'. When it is located at the top of a script, the whole script works the “modern” way. -->
     <script>
       "use strict";
@@ -22,7 +23,7 @@
     </script>
 <hr>
 
-# 4 Variables
+## 4 Variables
 Variables are used to store this information.<br>
 A variable is a “named storage” for data. We can use variables to store goodies, visitors, and other data.
 
@@ -45,3 +46,39 @@ let message = 'Hello!'; // define the variable and assign the value
 alert(message); // Hello!
 
 <hr>
+
+## 5  Data Types
+
+  => 8 Data Types in JS
+
+  ### BigInt
+
+  A BigInt value is created by appending n to the end of an integer:
+
+// the "n" at the end means it's a BigInt
+const bigInt = 1234567890123456789012345678901234567890n;
+
+  ### String
+
+  In JS, there are 3 types of quotes.
+
+  1.Double quotes: "Hello".
+  2.Single quotes: 'Hello'.
+  3.Backticks: `Hello`.
+
+  eg. let str = "Hello";
+  let str2 = 'Single quotes are ok too';
+  let phrase = `can embed another ${str}`;
+
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+
