@@ -111,6 +111,8 @@ This type is commonly used to store yes/no values: true means “yes, correct”
 
   eg. typeoof "foo"
 <hr>
+### Interaction: alert, prompt, confirm
+
 <hr>
 <hr>
 <hr>
