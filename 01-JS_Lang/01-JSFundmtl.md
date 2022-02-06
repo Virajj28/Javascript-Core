@@ -127,6 +127,21 @@ This type is commonly used to store yes/no values: true means “yes, correct”
 
   Explanation: shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.
 <hr>
+
+## String Conversion
+
+  Type Conversions: 
+  Syntax: 
+  let value = true;
+  alert(typeof value); // boolean
+
+  value = String(value); // now value is a string "true"
+  alert(typeof value); // string
+
+  ### String
+  ### Number
+
+  ### Boolean
 <hr>
 <hr>
 <hr>
