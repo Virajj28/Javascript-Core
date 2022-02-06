@@ -109,8 +109,23 @@ This type is commonly used to store yes/no values: true means “yes, correct”
   ### The typeof operator
   The typeof operator returns the type of the argument. It’s useful when we want to process values of different types differently or just want to do a quick check.
 
-  eg. typeoof "foo"
+  eg. typeof "foo"
 <hr>
+
+## Interaction: alert, prompt, confirm
+
+  ### alert shows a msg and waits for the user to press "OK"
+
+  eg. alert( 'Hello, world!' );
+
+  ### prompt accepts two arguments: 
+  eg. result = prompt(title,[default]);
+
+  ### confirm
+  Syntax:
+  result = confirm(question);
+
+  Explanation: shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.
 <hr>
 <hr>
 <hr>
