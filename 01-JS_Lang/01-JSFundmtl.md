@@ -140,9 +140,10 @@ This type is commonly used to store yes/no values: true means “yes, correct”
 
   ### String
   ### Number
-
   ### Boolean
 <hr>
+
+## Basic operators, maths
 <hr>
 <hr>
 <hr>
