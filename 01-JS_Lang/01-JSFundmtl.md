@@ -162,6 +162,10 @@ This type is commonly used to store yes/no values: true means “yes, correct”
 
     eg. alert( 2 ** 3 ); // 8, 2 to the power of 3
         alert( 2 ** 4 ); // 16, 2 to the power of 4
+      
+  ### String concatenation with binary +
+    eg. let s = "my" + "string";
+        alert(s); // mystring
 <hr>
 
 ## Comparisons
