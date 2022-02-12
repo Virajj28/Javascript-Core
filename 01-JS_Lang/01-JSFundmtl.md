@@ -169,6 +169,16 @@ This type is commonly used to store yes/no values: true means “yes, correct”
 <hr>
 
 ## Comparisons
+
+  ### Boolean is the result
+    True - means "yes", "correct", "true", "1"
+    False - means "no", "incorrect", "false", "0"
+
+  ### Typeof Operator
+    == don't look for typeof
+    eg. "1" == 1 
+    => true
+
 <hr>
 <hr>
 <hr>
