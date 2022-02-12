@@ -179,6 +179,10 @@ This type is commonly used to store yes/no values: true means “yes, correct”
     eg. "1" == 1 
     => true
 
+    === looks for typeof
+    eg. "1" === 1
+    => false
+
 <hr>
 <hr>
 <hr>
