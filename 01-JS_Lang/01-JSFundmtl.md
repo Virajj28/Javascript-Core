@@ -166,10 +166,29 @@ This type is commonly used to store yes/no values: true means “yes, correct”
   ### String concatenation with binary +
     eg. let s = "my" + "string";
         alert(s); // mystring
+
+  ### Assigment =
+    eg. let x = 5;
+        x = x + 1;
+        alert(x); // 6
+
+  ### Chaining Assignment Operator
+  eg. let a,b,c;
+      a = b = c = 2;
+      alert(a); // 2
+      alert(b); // 2
+      alert(c); // 2
+
+      OR
+
+      c = 2 + 2;
+      b = c;
+      a = c; 
+
+  
 <hr>
 
 ## Comparisons
-
   ### Boolean is the result
     True - means "yes", "correct", "true", "1"
     False - means "no", "incorrect", "false", "0"
