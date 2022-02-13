@@ -185,7 +185,17 @@ This type is commonly used to store yes/no values: true means “yes, correct”
       b = c;
       a = c; 
 
-  
+  ### Increment/Decrement
+  Look in mind about POSTFIX AND PREFIX.
+
+  ### Bitwise operators
+    AND ( & )
+    OR ( | )
+    XOR ( ^ )
+    NOT ( ~ )
+    LEFT SHIFT ( << )
+    RIGHT SHIFT ( >> )
+    ZERO-FILL RIGHT SHIFT ( >>> )
 <hr>
 
 ## Comparisons
