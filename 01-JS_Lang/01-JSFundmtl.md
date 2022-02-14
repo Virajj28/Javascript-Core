@@ -212,6 +212,11 @@ This type is commonly used to store yes/no values: true means “yes, correct”
     eg. "1" === 1
     => false
 
+  ### Strange result: null vs 0
+    eg. alert(null > 0); //false
+        alert(null == 0); //false
+        alert(null >= 0); //true
+
 <hr>
 <hr>
 <hr>
