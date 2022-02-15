@@ -152,26 +152,21 @@ This type is commonly used to store yes/no values: true means “yes, correct”
     Division /,
     Remainder %,
     Exponentiation **.
-
 ### Remainder %
 
     eg. alert( 5 % 2 ); // 1, a remainder of 5 divided by 2
         alert( 8 % 3 ); // 2, a remainder of 8 divided by 3
-
   ### Exponentiation **
 
     eg. alert( 2 ** 3 ); // 8, 2 to the power of 3
-        alert( 2 ** 4 ); // 16, 2 to the power of 4
-      
+        alert( 2 ** 4 ); // 16, 2 to the power of 4   
   ### String concatenation with binary +
     eg. let s = "my" + "string";
         alert(s); // mystring
-
   ### Assigment =
     eg. let x = 5;
         x = x + 1;
         alert(x); // 6
-
   ### Chaining Assignment Operator
   eg. let a,b,c;
       a = b = c = 2;
@@ -184,10 +179,8 @@ This type is commonly used to store yes/no values: true means “yes, correct”
       c = 2 + 2;
       b = c;
       a = c; 
-
   ### Increment/Decrement
   Look in mind about POSTFIX AND PREFIX.
-
   ### Bitwise operators
     AND ( & )
     OR ( | )
@@ -202,7 +195,6 @@ This type is commonly used to store yes/no values: true means “yes, correct”
   ### Boolean is the result
     True - means "yes", "correct", "true", "1"
     False - means "no", "incorrect", "false", "0"
-
   ### Typeof Operator
     == don't look for typeof
     eg. "1" == 1 
@@ -211,13 +203,30 @@ This type is commonly used to store yes/no values: true means “yes, correct”
     === looks for typeof
     eg. "1" === 1
     => false
-
   ### Strange result: null vs 0
     eg. alert(null > 0); //false
         alert(null == 0); //false
         alert(null >= 0); //true
-
 <hr>
+
+## Conditional branching: if, '?'
+
+### The “if” statement
+  The if(...) statement evaluates a condition in parentheses and, if the result is true, executes a block of code.
+
+  for eg. let year = prompt('In which yr was Ecma script created?');
+          if(year == 2015) alert('You're right !');
+### Several if Conditions: 
+    else, else...if,
+
+### Conditional operator '?'
+    To eliminate if...else statements we can use the conditional operator. As, we need to assign a variable depending on a condition.
+
+    Syntax: let result = condition ? value1 : value2;
+
+  eg. let age = prompt('How old are you?');
+      let message = (age < 18) ? 'Sorry, you are too young to use our service' : 'Welcome!';
+      alert(message);
 <hr>
 <hr>
 <hr>
