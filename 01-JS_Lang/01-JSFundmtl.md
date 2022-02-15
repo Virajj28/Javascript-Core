@@ -227,6 +227,25 @@ This type is commonly used to store yes/no values: true means “yes, correct”
   eg. let age = prompt('How old are you?');
       let message = (age < 18) ? 'Sorry, you are too young to use our service' : 'Welcome!';
       alert(message);
+
+    ##### Assignment:
+    let message;
+
+    if (login == 'Employee') {
+      message = 'Hello';
+    } else if (login == 'Director') {
+      message = 'Greetings';
+    } else if (login == '') {
+      message = 'No login';
+    } else {
+      message = '';
+    }
+
+    Solution: 
+      let message = (login == 'Employee') ? 'Hello':
+      (login == 'Director') ? 'Greetings' :
+      (login == '') ? 'No Login'
+       : '';
 <hr>
 <hr>
 <hr>
