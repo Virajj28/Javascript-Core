@@ -248,10 +248,26 @@ This type is commonly used to store yes/no values: true means “yes, correct”
        : '';
 <hr>
 
-### Logical Operators
+## Logical Operators
 
   Four Logical Operators in JS || (OR), && (AND), ! (NOT), ?? (NULLISH)
+
+### || (OR)
+Represented with two vertical line symbols:
+result = a || b;
+
+OR finds the first truthy value
+result = value1 || value2 || value3
+### && (AND)
+result = a && b;
+
+AND finds the first falsy value
+result = value1 && value2 && value3
+### ! (NOT)
+result = !value;
 <hr>
+
+## Nullish Coalescing Operator
 <hr>
 <hr>
 <hr>
