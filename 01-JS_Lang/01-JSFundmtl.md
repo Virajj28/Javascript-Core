@@ -273,6 +273,7 @@ result = !value;
 ## For, While Loops
 <hr>
 
+## The 'switch' statement
 <hr>
 <hr>
 
