@@ -275,5 +275,7 @@ result = !value;
 
 ## The 'switch' statement
 <hr>
+
+## Functions
 <hr>
 
