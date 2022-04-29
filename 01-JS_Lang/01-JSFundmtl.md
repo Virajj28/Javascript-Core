@@ -281,6 +281,33 @@ Eg. let firstName = null;
 <hr>
 
 ## For, While Loops
+For Loop:
+The condition is evaluated and converted to a boolean by while 
+Code: let i = 3;
+      while (i) { // when i becomes 0, the condition becomes falsy, and the loop stops
+        alert( i );
+        i--;
+      }
+
+While Loop:
+The loop will first execute the body, then check the condition, and, while it's truthy, execute it again and again.
+Code:let i = 0;
+    do {
+      alert( i );
+      i++;
+    } while (i < 3);
+
+For Loop:
+Code:  for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
+          alert(i);
+        }
+      
+      	
+begin =>	let i = 0  =>	Executes once upon entering the loop.
+condition => i < 3  =>	Checked before every loop iteration. If false, the loop stops.
+body  =>	alert(i)  =>	Runs again and again while the condition is truthy.
+step  =>	i++  =>	Executes after the body on each iteration
+
 <hr>
 
 ## The 'switch' statement
