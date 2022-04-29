@@ -311,6 +311,24 @@ step  =>	i++  =>	Executes after the body on each iteration
 <hr>
 
 ## The 'switch' statement
+ The switch has one or more cases, and a default case.
+ Code:
+    let a = 2 + 2;
+    switch (a) {
+      case 3:
+        alert( 'Too small' );
+        break;
+      case 4:
+        alert( 'Exactly!' );
+        break;
+      case 5:
+        alert( 'Too big' );
+        break;
+      default:
+        alert( "I don't know such values" );
+    }
+
+   <!-- Case 4 would get hit  -->
 <hr>
 
 ## Functions
