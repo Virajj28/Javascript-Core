@@ -332,5 +332,10 @@ step  =>	i++  =>	Executes after the body on each iteration
 <hr>
 
 ## Functions
+  Syntax: function name(parameter1, parameter2, ... parameterN) {
+            ...body...
+          }
+  
+  <!-- Study Deep on different types of variables fresh -->
 <hr>
 
