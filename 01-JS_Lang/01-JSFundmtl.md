@@ -385,3 +385,15 @@ Strict Mode:
     // error: can't create variables in strict mode
     var x = 10;
   }
+
+Variables:
+Can be declared using:
+
+let
+const (constant, can’t be changed)
+var (old-style, will see later)
+
+eg. Variables are dynamically typed. They can store any value:
+
+let x = 5;
+x = "John";
