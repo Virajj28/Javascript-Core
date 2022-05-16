@@ -367,3 +367,21 @@ function showCancel() {
 
 // usage: functions showOk, showCancel are passed as arguments to ask
 ask("Do you agree?", showOk, showCancel);
+
+## Code Structure
+
+function f() {
+  // no semicolon needed after function declaration
+}
+
+for(;;) {
+  // no semicolon needed after the loop
+}
+
+Strict Mode: 
+  'use strict';
+  function f() {
+    'use strict';
+    // error: can't create variables in strict mode
+    var x = 10;
+  }
