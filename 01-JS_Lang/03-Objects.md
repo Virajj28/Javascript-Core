@@ -61,3 +61,11 @@ function makeUser(name, age) {
 
 let user = makeUser("John", 30);
 alert(user.name); // John
+
+
+//Property existence test, “in” operator
+The syntax is:"key" in object
+For instance:
+let user = { name: "John", age: 30 };
+alert( "age" in user ); // true, user.age exists
+alert( "blabla" in user ); // false, user.blabla doesn't exis
