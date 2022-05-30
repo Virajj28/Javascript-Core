@@ -78,3 +78,15 @@ User.prototype.sayHi = function() {
 // Usage:
 let user = new User("John");
 user.sayHi();
+
+////Why class can be considered a syntactic sugar to define a constructor together with its prototype methods.
+First, a function created by class is labelled by a special internal property [[IsClassConstructor]]: true. So it’s not entirely the same as creating it manually.
+
+The language checks for that property in a variety of places. For example, unlike a regular function, it must be called with new:
+
+class User {
+  constructor() {}
+}
+
+alert(typeof User); // function
+User(); // Error: Class constructor User cannot be invoked without 'new'
