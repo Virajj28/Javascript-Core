@@ -90,3 +90,23 @@ class User {
 
 alert(typeof User); // function
 User(); // Error: Class constructor User cannot be invoked without 'new'
+
+
+//// Getter and Setters 
+The basic class syntax looks like this:
+
+class MyClass {
+  prop = value; // property
+
+  constructor(...) { // constructor
+    // ...
+  }
+
+  method(...) {} // method
+
+  get something(...) {} // getter method
+  set something(...) {} // setter method
+
+  [Symbol.iterator]() {} // method with computed name (symbol here)
+  // ...
+}
