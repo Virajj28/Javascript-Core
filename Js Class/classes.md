@@ -110,3 +110,21 @@ class MyClass {
   [Symbol.iterator]() {} // method with computed name (symbol here)
   // ...
 }
+
+
+//// Class Inheritance
+// The "extends" keyword
+The syntax to extend another class is: class Child extends Parent.
+
+Let’s create class Rabbit that inherits from Animal:
+
+class Rabbit extends Animal {
+  hide() {
+    alert(`${this.name} hides!`);
+  }
+}
+
+let rabbit = new Rabbit("White Rabbit");
+
+rabbit.run(5); // White Rabbit runs with speed 5.
+rabbit.hide(); // White Rabbit hides!
