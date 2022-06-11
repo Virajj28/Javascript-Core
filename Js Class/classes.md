@@ -173,3 +173,13 @@ let rabbit = new Rabbit("White Rabbit");
 
 rabbit.run(5); // White Rabbit runs with speed 5.
 rabbit.stop(); // White Rabbit stands still. White Rabbit hides!
+
+
+//// Overriding constructor
+class Rabbit extends Animal {
+  // generated for extending classes without own constructors
+  constructor(...args) {
+    super(...args);
+  }
+}
+As we can see, it basically calls the parent constructor passing it all the arguments. That happens if we don’t write a constructor of our own.
