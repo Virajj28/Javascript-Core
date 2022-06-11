@@ -183,3 +183,30 @@ class Rabbit extends Animal {
   }
 }
 As we can see, it basically calls the parent constructor passing it all the arguments. That happens if we don’t write a constructor of our own.
+
+For the Rabbit constructor to work, it needs to call super() before using this, like here:
+
+class Animal {
+
+  constructor(name) {
+    this.speed = 0;
+    this.name = name;
+  }
+
+  // ...
+}
+
+class Rabbit extends Animal {
+
+  constructor(name, earLength) {
+    super(name);
+    this.earLength = earLength;
+  }
+
+  // ...
+}
+
+// now fine
+let rabbit = new Rabbit("White Rabbit", 10);
+alert(rabbit.name); // White Rabbit
+alert(rabbit.earLength); // 10
