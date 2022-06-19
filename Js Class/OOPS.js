@@ -1,0 +1,1 @@
+// Functions associated in objects are called methods in classes.
