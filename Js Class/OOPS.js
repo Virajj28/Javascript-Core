@@ -28,17 +28,25 @@ class User {
     constructor(email, name){
         this.email = email;
         this.name = name;
+        this.score = 0;
     }
     login() {
         console.log(this.email, 'has logged in');
+        return this;
     }
     logout(){
         console.log(this.email, 'has logged out');
+        return this;
+    }
+    updateScore(){
+        this.score++;
+        console.log(this.email, 'has a score of', this.score);
+        return this;
     }
 }  
 
 var userOne = new User('geek@gmail.com', 'Geek');
 var userTwo = new User('nervebody@yahoo.com','Nervebody');
 
-userOne.login();
-userTwo.logout();
+userOne.login().updateScore().logout();
+userTwo.login().updateScore().updateScore().logout();
