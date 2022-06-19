@@ -29,10 +29,16 @@ class User {
         this.email = email;
         this.name = name;
     }
-}
+    login() {
+        console.log(this.email, 'has logged in');
+    }
+    logout(){
+        console.log(this.email, 'has logged out');
+    }
+}  
 
 var userOne = new User('geek@gmail.com', 'Geek');
 var userTwo = new User('nervebody@yahoo.com','Nervebody');
 
-console.log(userOne);
-console.log(userTwo);
+userOne.login();
+userTwo.logout();
