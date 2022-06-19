@@ -12,3 +12,7 @@ var userOne = {
 
 userOne.login();
 userOne.logout();
+
+// Updatiing Properties
+// userOne.name = 'Yo';
+// console.log(userOne.name);
