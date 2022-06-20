@@ -45,8 +45,20 @@ class User {
     }
 }  
 
+class Admin extends Users {
+    deleteUser(){
+        users = users.filter(u => {
+            return u.email != user.email
+        })
+    }
+} 
+
 var userOne = new User('geek@gmail.com', 'Geek');
 var userTwo = new User('nervebody@yahoo.com','Nervebody');
+var admin = new Admin('lol@skype.com','Lol');
 
-userOne.login().updateScore().logout();
-userTwo.login().updateScore().updateScore().logout();
+var users = [userOne, userTwo];
+
+admin.deleteUser(userTwo);
+
+console.log(users);
