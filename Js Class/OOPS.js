@@ -66,6 +66,17 @@ function User(email, name) {
         console.log(this.email, 'has logged in');
     }
 }
+
+User.prototype.login = function (){
+    this.online = true;
+    console.log(this.email, 'has logged in');
+}
+
+User.prototype.logout = function (){
+    this.online = false;
+    console.log(this.email, 'has logged out');
+}
+
 var userOne = new User('geek@gmail.com', 'Geek');
 var userTwo = new User('nervebody@yahoo.com','Nervebody');
 // var admin = new Admin('lol@skype.com','Lol');
