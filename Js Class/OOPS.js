@@ -77,9 +77,28 @@ User.prototype.logout = function (){
     console.log(this.email, 'has logged out');
 }
 
+// ...args => rest operator
+function Admin(...args){
+    // console.log(args);
+    User.apply(this, args);
+    this.role = 'admin';
+}
+
+Admin.prototype = Object.create(User.prototype);
+
+Admin.prototype.deleteUser = function(u){
+    users = users.filter(user => {
+        return user.email != u.email;
+    })
+}
+
 var userOne = new User('geek@gmail.com', 'Geek');
 var userTwo = new User('nervebody@yahoo.com','Nervebody');
-// var admin = new Admin('lol@skype.com','Lol');
+var admin = new Admin('lol@skype.com','Lol');
+
+var users = [userOne, userTwo, admin];
+
+console.log(admin);
 
 console.log(userOne);
 userTwo.login();
