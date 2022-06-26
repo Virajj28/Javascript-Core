@@ -24,41 +24,51 @@
 // - sets the value of 'this' to be the new empty object
 // - calls the constructor method
 
-class User {
-    constructor(email, name){
-        this.email = email;
-        this.name = name;
-        this.score = 0;
-    }
-    login() {
+// class User {
+//     constructor(email, name){
+//         this.email = email;
+//         this.name = name;
+//         this.score = 0;
+//     }
+//     login() {
+//         console.log(this.email, 'has logged in');
+//         return this;
+//     }
+//     logout(){
+//         console.log(this.email, 'has logged out');
+//         return this;
+//     }
+//     updateScore(){
+//         this.score++;
+//         console.log(this.email, 'has a score of', this.score);
+//         return this;
+//     }
+// }  
+
+// class Admin extends Users {
+//     deleteUser(){
+//         users = users.filter(u => {
+//             return u.email != user.email
+//         })
+//     }
+// } 
+// var users = [userOne, userTwo];
+
+// admin.deleteUser(userTwo);
+
+// console.log(users);
+
+function User(email, name) {
+    this.email = email;
+    this.name = name;
+    this.online = false;
+    this.login = function(){
         console.log(this.email, 'has logged in');
-        return this;
     }
-    logout(){
-        console.log(this.email, 'has logged out');
-        return this;
-    }
-    updateScore(){
-        this.score++;
-        console.log(this.email, 'has a score of', this.score);
-        return this;
-    }
-}  
-
-class Admin extends Users {
-    deleteUser(){
-        users = users.filter(u => {
-            return u.email != user.email
-        })
-    }
-} 
-
+}
 var userOne = new User('geek@gmail.com', 'Geek');
 var userTwo = new User('nervebody@yahoo.com','Nervebody');
-var admin = new Admin('lol@skype.com','Lol');
+// var admin = new Admin('lol@skype.com','Lol');
 
-var users = [userOne, userTwo];
-
-admin.deleteUser(userTwo);
-
-console.log(users);
+console.log(userOne);
+userTwo.login();
