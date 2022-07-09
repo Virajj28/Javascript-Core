@@ -20,3 +20,14 @@ function calcSum (num1,num2){
 }
 
 console.log(calculate(2,3, calcSum));
+
+
+
+// Error habdling
+setTimeout(function() {
+    try {
+      noSuchVariable; // try...catch handles the error!
+    } catch {
+      alert( "error is caught here!" );
+    }
+  }, 1000)
