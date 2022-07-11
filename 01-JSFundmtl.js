@@ -23,7 +23,7 @@ console.log(calculate(2,3, calcSum));
 
 
 
-// Error habdling
+// Error handling
 setTimeout(function() {
     try {
       noSuchVariable; // try...catch handles the error!
